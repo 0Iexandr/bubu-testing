@@ -1,0 +1,30 @@
+.language-settings {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.language-settings__language {
+  color: var(--pink);
+  font-family: 'Comfortaa';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  &--active {
+    color: var(--white);
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.language-settings__separator {
+  color: var(--lightPurple);
+
+  @media screen and (max-width: 768px) {
+    color: var(--white);
+  }
+}

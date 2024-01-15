@@ -1,0 +1,157 @@
+.header {
+  background: var(--accent);
+  padding-top: 20px;
+  padding-bottom: 16px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+.header__container {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 480px) {
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__navbar {
+  display: block;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.header__user-controls {
+  display: block;
+
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+.header__user-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 36px;
+  justify-content: flex-end;
+  padding-left: 264px;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 480px) {
+    position: static;
+    gap: 20px;
+  }
+}
+
+.header__search {
+  position: relative;
+  width: 100%;
+
+  &-input {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    background: rgba(255, 255, 255, 0.15);
+    width: 100%;
+    height: 47px;
+
+    &::placeholder {
+      color: var(--white);
+      font-family: 'Comfortaa';
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &-mobile {
+    display: none;
+
+    @media screen and (max-width: 480px) {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    width: fit-content;
+  }
+}
+
+.header__catalog {
+  display: block;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.header__ {
+  display: block;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.header__burger {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header__burger-icon {
+  width: 30px;
+  height: 18px;
+}

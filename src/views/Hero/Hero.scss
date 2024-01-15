@@ -1,0 +1,22 @@
+.hero {
+  padding-top: 30px;
+  padding-bottom: 80px;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 60px;
+  }
+}
+
+.hero__container {
+  display: flex;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.hero__img-slider {
+  z-index: 0;
+}
